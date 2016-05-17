@@ -1,0 +1,35 @@
+0) Pose three questions (and ans.) to last lecture (use plain ascii, start line with Q1: answer with A1: etc...)
+
+1) give your summary of last lecture
+
+2) read Chapter 6.2 , 7.1, 7.2., 7.3 HZ, MVG. hand in some summary... (any format)
+
+3) Solve the attached problem: MATLAB Task- compute the length ratios of parallel scene "MATLAB Task- compute the length ratios of parallel scene lines.pdf", see the respective PDF file [note: THIS task will be REASSIGNED next week, so solve only if time left...]
+
+4) Build the camera matrix P for your smartphone camera. Use MATLAB (or using the CALTECH camera calibration toolbox or openCV with phyton wrapper) Proceed as follows:
+
+a) print a 2D calibration rig :  I = checkerboard(100); imshow(I)
+
+b) take about 20 shots from the rig on paper
+
+c) run "cameraCalibraton", build the camera parameter class, print the content to a readable file, deliver the file
+
+d) take some trial photos from objects / views s.t. lens distrotions are visible
+
+e) undistort these photos using the camera parameter class e.g.::
+
+shelf0 = imread('/Users/paul/Downloads/calibrationGT9100/20150616_074411.jpg');
+
+figure();imshow(imrotate(shelf0,180))
+
+shelfr = imread('/Users/paul/Downloads/calibrationGT9100/20150616_074421.jpg');
+
+shelfrr = imread('/Users/paul/Downloads/calibrationGT9100/20150616_074444.jpg');
+
+[J0,newOrigin] = undistortImage(shelf0,PGPcameraParams);
+
+[Jr,newOrigin] = undistortImage(shelfr,PGPcameraParams);
+
+[Jrr,newOrigin] = undistortImage(shelfrr,PGPcameraParams);
+
+figure();imshow(imrotate(J0,180))
