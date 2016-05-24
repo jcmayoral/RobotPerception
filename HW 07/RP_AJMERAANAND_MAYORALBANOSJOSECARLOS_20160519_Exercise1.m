@@ -43,7 +43,7 @@ title('Reprojection Errors');
 % Estimate Camera Parameters
 %-------------------------------------------------------------------
 magnification = 25;
-imOrig = imread(fullfile(path,'image1.jpg'));
+imOrig = imread(fullfile(path,'image4.jpg'));
 %figure; imshow(imOrig, 'InitialMagnification', magnification);
 %title('Input Image');
 
