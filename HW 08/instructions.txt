@@ -1,0 +1,10 @@
+0) 3 questions to last lecture 
+
+1) read this MATLAB explanation. Rehearse this experiment using your own smart phone camera (or some BETTER camera if avallable) , in openCV (if possible) and use a different object (like a book, match box etc). Then compare your result to the measurements done on the real object. How large is the difference? Taking your observed error, is this lay inside the error bounds produced by the calibration algorithm?
+
+2) Solve the attached problem: "MATLAB Task- compute the length ratios of parallel scene lines.pdf", see the respective PDF file. 
+
+3) [Octavio Camargo+ Bach only, instead or exe 2)] Compare the MATLAB calibration process and the respective openCV calibration (using the python module "import cv2"), spell out in detail :: similarities / differences. Will both tool ste produce IDENTICAL results for IDENTICAL cameras? What makes the diffference?
+
+4) Read the slide set read the subsection on "Computation of F" (OR check the book Chapter 11). Implement a Normalized 8 point algorithm.Use the following signature: fNorm8Point = estimateFundamentalMatrix(inlierPts1, inlierPts2)where the inliers denote the pixel coordinates of corresponding points in left / right image. Image material may be found in the attached zip file also some point arrays for corresponding points in left and right image (image nombre 7)
+
