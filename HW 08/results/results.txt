@@ -1,3 +1,0 @@
-Measured diameter of one penny = 18.42 mm
-Measured diameter of the other penny = 18.43 mm
-Distance from the camera to the first penny = 364.14 mm
