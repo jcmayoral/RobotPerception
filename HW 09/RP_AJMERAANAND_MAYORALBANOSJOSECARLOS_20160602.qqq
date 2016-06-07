@@ -9,3 +9,18 @@ A2. The SIFT can be used to train the points found using SIFT and can be used to
 Q3. What is DOG?
 
 A3. The DOG is the difference of gradient between the different size of images.
+
+//MAYORAL
+
+Q1. What is a keypoint descriptor?
+ 
+A1. The keypoint descriptor is a vector describing the local region around the keypoint.
+
+Q2. What does Scale Invariant Feature Transform?
+
+A2. It extracts feature points with a vector of attributes that is invariant to scale and rotation in the plane and robust to moderate amounts of various kinds of
+affine distortion, illumination changes and noise.
+
+Q3. What is a keypoint?
+
+A3. Are the locations of the points with more constrast in it's neighbors
